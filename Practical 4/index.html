@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page for the StudentHub student portal.">
+    <title>Home | StudentHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header>
+        <h1>StudentHub</h1>
+        <p>A simple student information portal</p>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false">Menu</button>
+        <button id="theme-toggle" type="button" aria-pressed="false">Use dark theme</button>
+        <nav id="main-nav" aria-label="Main navigation">
+            <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content" class="home-layout">
+        <div class="notice" id="notice"><p>Welcome to StudentHub! <button id="dismiss-notice" type="button">Dismiss notice</button></p></div>
+        <section aria-labelledby="featured-title" class="slider">
+            <h2 id="featured-title">StudentHub highlights</h2>
+            <p id="slide-text" aria-live="polite">Find student information and helpful links in one place.</p>
+            <button id="previous-slide" type="button">Previous</button>
+            <button id="next-slide" type="button">Next</button>
+            <button id="open-modal" type="button">What is this portal?</button>
+        </section>
+        <dialog id="info-modal" aria-labelledby="modal-title">
+            <h2 id="modal-title">About this sample portal</h2>
+            <p>StudentHub is a learning project for Web Development Frameworks.</p>
+            <button id="close-modal" type="button">Close</button>
+        </dialog>
+        <h1>Home</h1>
+        <section aria-labelledby="welcome-title"><h2 id="welcome-title">Welcome to StudentHub</h2><p>StudentHub keeps useful student information, campus events, and support links in one place.</p><p><a href="register.html">Create a student account</a> or <a href="events.html">view upcoming events</a>.</p></section><section aria-labelledby="quick-links"><h2 id="quick-links">Quick links</h2><ul><li><a href="about.html">Learn about StudentHub</a></li><li><a href="faq.html">Read frequently asked questions</a></li><li><a href="feedback.html">Send us feedback</a></li></ul></section>
+    </main>
+    <footer>
+        <p>&copy; 2026 StudentHub - Web Development Frameworks Practical 2</p>
+        <p><a href="contact.html">Contact us</a></p>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+</html>

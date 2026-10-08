@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Feedback page for the StudentHub student portal.">
+    <title>Feedback | StudentHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header>
+        <h1>StudentHub</h1>
+        <p>A simple student information portal</p>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false">Menu</button>
+        <button id="theme-toggle" type="button" aria-pressed="false">Use dark theme</button>
+        <nav id="main-nav" aria-label="Main navigation">
+            <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="feedback.html" aria-current="page">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <h1>Feedback</h1>
+        <section><h2>Share your feedback</h2><form action="#" method="get"><p><label for="feedback-name">Your name</label><br><input id="feedback-name" name="name" type="text"></p><p><label for="feedback-text">Your feedback</label><br><textarea id="feedback-text" name="feedback" rows="5" required></textarea></p><button type="submit">Submit feedback</button></form></section>
+    </main>
+    <footer>
+        <p>&copy; 2026 StudentHub - Web Development Frameworks Practical 2</p>
+        <p><a href="contact.html">Contact us</a></p>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+</html>
